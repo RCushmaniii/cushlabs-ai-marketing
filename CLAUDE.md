@@ -1,0 +1,64 @@
+# CLAUDE.md — AI Marketing Suite
+
+## Project Overview
+
+AI Marketing Suite for Claude Code — a skill system that adds 15 `/market` slash commands for marketing analysis and content generation. Forked from [ai-marketing-claude](https://github.com/zubair-trabzada/ai-marketing-claude) and maintained by CushLabs.
+
+## Tech Stack
+
+- Claude Code Skills System (Markdown skill definitions)
+- Python 3.6+ (page analysis, PDF generation)
+- Bash (install/uninstall scripts)
+- ReportLab (optional, PDF report generation)
+
+## Project Structure
+
+- `market/SKILL.md` — Main orchestrator, routes all `/market <command>` invocations
+- `skills/` — 14 specialized sub-skills (audit, copy, emails, social, ads, funnel, competitors, landing, launch, proposal, report, report-pdf, seo, brand)
+- `agents/` — 5 parallel subagent definitions for full audits (content, conversion, competitive, technical, strategy)
+- `scripts/` — Python utilities (analyze_page.py, generate_pdf_report.py, competitor_scanner.py, social_calendar.py)
+- `templates/` — 6 marketing templates (email sequences, proposals, calendars, checklists)
+- `install.sh` / `uninstall.sh` — Installer copies skills to `~/.claude/skills/` and agents to `~/.claude/agents/`
+
+## Development Commands
+
+```bash
+# Install skills to Claude Code
+./install.sh
+
+# Uninstall skills from Claude Code
+./uninstall.sh
+
+# Install optional PDF dependency
+pip install reportlab
+
+# Test page analyzer
+python3 scripts/analyze_page.py https://example.com
+
+# Test PDF generator (demo mode)
+python3 scripts/generate_pdf_report.py
+```
+
+## Key Patterns & Conventions
+
+- Skills are Markdown files (`SKILL.md`) that instruct Claude on analysis methodology, scoring criteria, and output format
+- Each skill is self-contained — includes when to use, execution steps, and exact output structure
+- Agents are Markdown files in `agents/` that define parallel analysis dimensions
+- The audit skill launches all 5 agents simultaneously and synthesizes their results
+- Scoring uses a weighted formula: Content (25%) + Conversion (20%) + SEO (20%) + Competitive (15%) + Brand (10%) + Growth (10%)
+- All output files are generated in the current working directory (MARKETING-AUDIT.md, SEO-AUDIT.md, etc.)
+- Python scripts use stdlib only — no external dependencies for core functionality
+
+## Current Focus
+
+Initial CushLabs fork setup. The skill system is fully functional as-is. Future work may include customizing skills for CushLabs client workflows and adding new marketing commands.
+
+## Known Issues
+
+- `competitor_scanner.py` and `social_calendar.py` are template stubs, not fully implemented
+- Install script targets bash/zsh — no native PowerShell installer yet
+- PDF generation requires `reportlab` which must be installed separately
+
+## Environment Setup
+
+No environment variables required. The system uses Claude Code's native skill loading from `~/.claude/skills/` and `~/.claude/agents/`.
