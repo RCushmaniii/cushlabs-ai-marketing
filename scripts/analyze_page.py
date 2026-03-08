@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
 """
 Marketing Page Analyzer — Utility script for AI Marketing Claude Code Skills
 Analyzes a webpage for marketing effectiveness: SEO elements, content structure,

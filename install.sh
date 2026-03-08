@@ -26,7 +26,7 @@ else
     # Running via curl | bash — need to clone
     echo -e "${YELLOW}Running remote install — cloning repository...${NC}"
     TEMP_DIR=$(mktemp -d)
-    git clone --depth 1 https://github.com/zubair-trabzada/ai-marketing-claude.git "$TEMP_DIR/ai-marketing-claude" 2>/dev/null
+    git clone --depth 1 https://github.com/RCushmaniii/cushlabs-ai-marketing.git "$TEMP_DIR/ai-marketing-claude" 2>/dev/null
     if [ $? -ne 0 ]; then
         echo -e "${RED}Failed to clone repository.${NC}"
         exit 1
@@ -164,12 +164,20 @@ fi
 
 # Install Python dependencies
 echo -e "\n${BLUE}Checking Python dependencies...${NC}"
+# Detect python command (python3 on Unix, python on Windows)
+PYTHON_CMD=""
 if command -v python3 &>/dev/null; then
-    PYTHON_VERSION=$(python3 -c "import sys; print(f'{sys.version_info.major}.{sys.version_info.minor}')" 2>/dev/null)
+    PYTHON_CMD="python3"
+elif command -v python &>/dev/null; then
+    PYTHON_CMD="python"
+fi
+
+if [ -n "$PYTHON_CMD" ]; then
+    PYTHON_VERSION=$($PYTHON_CMD -c "import sys; print(f'{sys.version_info.major}.{sys.version_info.minor}')" 2>/dev/null)
     echo -e "  ${GREEN}✓${NC} Python $PYTHON_VERSION detected"
 
     # Check for reportlab (needed for PDF reports)
-    if python3 -c "import reportlab" 2>/dev/null; then
+    if $PYTHON_CMD -c "import reportlab" 2>/dev/null; then
         echo -e "  ${GREEN}✓${NC} reportlab installed (PDF reports ready)"
     else
         echo -e "  ${YELLOW}⚠${NC} reportlab not installed (needed for PDF reports)"
@@ -177,7 +185,7 @@ if command -v python3 &>/dev/null; then
     fi
 
     # Check for requests (optional, scripts use urllib as fallback)
-    if python3 -c "import requests" 2>/dev/null; then
+    if $PYTHON_CMD -c "import requests" 2>/dev/null; then
         echo -e "  ${GREEN}✓${NC} requests installed"
     fi
 else

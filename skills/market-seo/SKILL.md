@@ -16,7 +16,7 @@ Perform a comprehensive SEO audit of a webpage or website, covering on-page SEO,
 Use the Python analysis script to gather baseline data:
 
 ```bash
-python3 scripts/analyze_page.py <url>
+python scripts/analyze_page.py <url>
 ```
 
 This script extracts:

@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
 """
 Marketing Report PDF Generator — AI Marketing Claude Code Skills
 Generates professional, client-ready PDF marketing reports with charts,

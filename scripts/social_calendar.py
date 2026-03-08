@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
 """
 Social Media Calendar Generator — Utility script for AI Marketing Claude Code Skills
 Generates a structured 30-day social media content calendar with platform-specific posts.

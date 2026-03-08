@@ -52,7 +52,7 @@ Use multiple methods to identify competitors:
 Use the Python script at `scripts/competitor_scanner.py` for automated data collection when available:
 
 ```
-python scripts/competitor_scanner.py --url [competitor-url] --output json
+python scripts/competitor_scanner.py competitor1.com competitor2.com competitor3.com
 ```
 
 The script can collect:

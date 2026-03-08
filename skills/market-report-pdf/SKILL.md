@@ -216,12 +216,12 @@ JSONEOF
 **Prerequisites check:**
 First, verify that `reportlab` is installed:
 ```bash
-python3 -c "import reportlab" 2>/dev/null || pip3 install reportlab
+python -c "import reportlab" 2>/dev/null || pip install reportlab
 ```
 
 **Generate the report:**
 ```bash
-python3 scripts/generate_pdf_report.py /tmp/report_data.json "MARKETING-REPORT-<domain>.pdf"
+python scripts/generate_pdf_report.py /tmp/report_data.json "MARKETING-REPORT-<domain>.pdf"
 ```
 
 Replace `<domain>` with the target website's domain name (without protocol or www), using hyphens instead of dots. For example:
@@ -231,7 +231,7 @@ Replace `<domain>` with the target website's domain name (without protocol or ww
 **Demo mode (no arguments):**
 Running the script without arguments generates a sample report with placeholder data:
 ```bash
-python3 scripts/generate_pdf_report.py
+python scripts/generate_pdf_report.py
 # Creates: MARKETING-REPORT-sample.pdf
 ```
 
@@ -313,11 +313,11 @@ The PDF uses a professional color palette:
 
 | Issue | Solution |
 |---|---|
-| `ModuleNotFoundError: No module named 'reportlab'` | Run `pip3 install reportlab` |
+| `ModuleNotFoundError: No module named 'reportlab'` | Run `pip install reportlab` |
 | Script produces empty PDF | Check that JSON data has all required fields |
 | Score gauge not rendering | Ensure `overall_score` is a number 0-100 |
 | Competitor table missing | Ensure `competitors` array has objects with `name`, `positioning`, `pricing`, `social_proof`, `content` fields |
-| PDF is only 1 page | Check for JSON parsing errors -- run `python3 -c "import json; json.load(open('/tmp/report_data.json'))"` |
+| PDF is only 1 page | Check for JSON parsing errors -- run `python -c "import json; json.load(open('/tmp/report_data.json'))"` |
 | Fonts look wrong | The script uses Helvetica (built into reportlab). No custom fonts needed. |
 
 ## Integration with Other Skills

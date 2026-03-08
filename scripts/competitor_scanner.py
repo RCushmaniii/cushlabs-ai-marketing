@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
 """
 Competitor Scanner — Utility script for AI Marketing Claude Code Skills
 Scans competitor websites to extract positioning, pricing, features, and trust signals
