@@ -1,0 +1,110 @@
+{
+  "url": "https://www.nyenglishteacher.com/en/",
+  "date": "March 8, 2026",
+  "brand_name": "NY English Teacher",
+  "overall_score": 74,
+  "executive_summary": "NYEnglishTeacher.com scores 74/100 — a solid B grade with exceptional messaging and social proof. The 'performance coaching, not ESL' positioning is the site's strongest asset, supported by 15 named testimonials from C-suite executives at recognizable companies. The biggest strategic issue is pricing: at $25 USD/session, the price directly contradicts the premium Fortune 100 strategist positioning. Raising prices 4-6x and adding a post-assessment email nurture sequence could increase monthly revenue by $3,000-$8,000 without adding a single new client.",
+  "categories": {
+    "Content & Messaging": {
+      "score": 82,
+      "weight": "25%"
+    },
+    "Conversion Optimization": {
+      "score": 66,
+      "weight": "20%"
+    },
+    "SEO & Discoverability": {
+      "score": 72,
+      "weight": "20%"
+    },
+    "Competitive Positioning": {
+      "score": 75,
+      "weight": "15%"
+    },
+    "Brand & Trust": {
+      "score": 82,
+      "weight": "10%"
+    },
+    "Growth & Strategy": {
+      "score": 68,
+      "weight": "10%"
+    }
+  },
+  "findings": [
+    {
+      "severity": "Critical",
+      "finding": "Pricing at $25 USD/session contradicts premium executive positioning. Executive communication coaching typically commands $150-$500/hr. Current pricing leaves 80-90% of revenue on the table."
+    },
+    {
+      "severity": "High",
+      "finding": "No confirmed analytics or conversion tracking. Cannot measure organic performance, attribute leads, or optimize conversion paths."
+    },
+    {
+      "severity": "High",
+      "finding": "CTA fragmentation — four different phrasings route to the same booking destination, creating cognitive load and reducing click-through."
+    },
+    {
+      "severity": "High",
+      "finding": "No post-assessment email nurture sequence. The 90-second assessment captures leads but has no mechanism to convert them over time."
+    },
+    {
+      "severity": "Medium",
+      "finding": "Zero urgency or scarcity signals anywhere on the site. Solo practitioner has genuinely limited availability but doesn't communicate it."
+    },
+    {
+      "severity": "Medium",
+      "finding": "No hreflang tags confirmed for EN/ES bilingual pages. Risk of duplicate content treatment by search engines."
+    },
+    {
+      "severity": "Medium",
+      "finding": "No video testimonials. For a communication coach, audio/video proof would be the most compelling format."
+    },
+    {
+      "severity": "Low",
+      "finding": "Domain name 'NY English Teacher' pulls the brand downmarket — signals ESL tutoring, not C-suite executive coaching."
+    }
+  ],
+  "quick_wins": [
+    "Standardize all CTAs to one phrase: 'Book Your Free Strategy Session' — eliminates cognitive fragmentation",
+    "Add urgency signals: 'Next available slot: [date]' or '3 consultation slots remaining this week'",
+    "Install GA4 with 3 conversion events: form submission, chat engagement, assessment completion",
+    "Add hreflang tags and generate sitemap.xml via Astro integration",
+    "Add BlogPosting schema to blog template and Review schema to testimonials page"
+  ],
+  "medium_term": [
+    "Raise prices 4-6x: $100-$150/session individual, $200-$400 C-suite. Grandfather existing clients.",
+    "Build 3-email post-assessment nurture sequence to convert assessment leads over 7 days",
+    "Create 3 outcome-based case studies with before/after metrics from top clients",
+    "Launch tiered pricing page: Self-paced, Group ($75-$100), Executive ($150-$250), Corporate (custom)",
+    "Add 1-2 video testimonials from C-suite clients — 60-second smartphone recordings"
+  ],
+  "strategic": [
+    "Launch group coaching cohorts: 6-8 person, 8-week programs at $500-$800 per person",
+    "Build a corporate landing page with separate messaging, ROI calculator, and custom quote form",
+    "Create a referral program: one free session per converted referral from 200+ coached leaders",
+    "Pursue ICF ACC certification for corporate procurement credibility"
+  ],
+  "competitors": [
+    {
+      "name": "iTalki / Preply",
+      "positioning": "Marketplace tutors, volume-based",
+      "pricing": "$10-$50/hr, commodity",
+      "social_proof": "Platform ratings, thousands of reviews",
+      "content": "Tutor profiles, no thought leadership"
+    },
+    {
+      "name": "Berlitz / EF Corporate",
+      "positioning": "Institutional brand, corporate contracts",
+      "pricing": "Premium institutional rates",
+      "social_proof": "Global brand recognition",
+      "content": "Corporate marketing, research reports"
+    },
+    {
+      "name": "US Executive Coaches",
+      "positioning": "Premium, US-based, individual practice",
+      "pricing": "$200-$500/hr per session",
+      "social_proof": "LinkedIn endorsements, ICF credentials",
+      "content": "Books, speaking, LinkedIn thought leadership"
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "url": "https://cushlabs.ai",
+  "date": "March 8, 2026",
+  "brand_name": "CushLabs.ai",
+  "overall_score": 48,
+  "executive_summary": "CushLabs.ai scores 48/100 with significant gaps suppressing conversion and growth. The site has genuine strengths: clear positioning as a solo AI consultant for SMBs, transparent fixed pricing ($1,500-$15,000+), 27 live portfolio projects, and bilingual capability. The biggest problem is a complete absence of social proof — zero testimonials, zero client logos, zero case studies with outcomes. The second critical gap is no growth engine: no blog, no email capture, no analytics. Implementing the top 5 recommendations could increase qualified lead flow by 30-50% within 90 days.",
+  "categories": {
+    "Content & Messaging": {
+      "score": 58,
+      "weight": "25%"
+    },
+    "Conversion Optimization": {
+      "score": 34,
+      "weight": "20%"
+    },
+    "SEO & Discoverability": {
+      "score": 52,
+      "weight": "20%"
+    },
+    "Competitive Positioning": {
+      "score": 52,
+      "weight": "15%"
+    },
+    "Brand & Trust": {
+      "score": 52,
+      "weight": "10%"
+    },
+    "Growth & Strategy": {
+      "score": 31,
+      "weight": "10%"
+    }
+  },
+  "findings": [
+    {
+      "severity": "Critical",
+      "finding": "Zero social proof anywhere on the site — no testimonials, client logos, case studies, or third-party reviews. At $5K-$15K price points, this likely suppresses conversion by 40-60%."
+    },
+    {
+      "severity": "Critical",
+      "finding": "No analytics or tracking installed — zero visibility into traffic, behavior, or conversions. Every optimization decision is a guess."
+    },
+    {
+      "severity": "Critical",
+      "finding": "No growth engine — no blog, no content marketing, no email capture, no lead magnet, no referral program. Revenue depends entirely on direct outreach."
+    },
+    {
+      "severity": "High",
+      "finding": "No sitemap.xml, robots.txt, or hreflang tags for bilingual EN/ES pages. Search engines cannot properly crawl or serve the correct language version."
+    },
+    {
+      "severity": "High",
+      "finding": "No alternative lead capture for visitors not ready to book a call. The ~90% of traffic that needs time to decide is lost permanently."
+    },
+    {
+      "severity": "Medium",
+      "finding": "Fortune 500 Engineering Discipline claim is unsubstantiated — no company names, roles, or verifiable details. Sophisticated buyers flag this as puffery."
+    },
+    {
+      "severity": "Medium",
+      "finding": "No urgency or scarcity signals anywhere. Solo consultancy has genuinely limited capacity but doesn't communicate it."
+    },
+    {
+      "severity": "Low",
+      "finding": "Homepage headline 'I Help Businesses Put AI to Work' is generic and lacks target keywords for SEO."
+    }
+  ],
+  "quick_wins": [
+    "Collect 3 client testimonials from past projects — email today, place on homepage and services page",
+    "Install Google Analytics or Plausible with conversion event tracking — 30 minutes of work",
+    "Add sitemap.xml via @astrojs/sitemap and create robots.txt — 25 minutes total",
+    "Add hreflang tags for EN/ES bilingual pages to prevent duplicate content penalties",
+    "Add 'What Happens on the Call' explainer above primary CTA to reduce booking friction"
+  ],
+  "medium_term": [
+    "Create 3-5 case studies with ROI metrics from existing portfolio projects (Problem, Solution, Result)",
+    "Add a lead magnet (AI Readiness Checklist) with email capture and 3-5 email nurture sequence",
+    "Build 2-3 comparison pages targeting high-intent search traffic (CushLabs vs Botpress, vs freelancers)",
+    "Launch bi-weekly blog or LinkedIn content cadence to build SEO surface area and thought leadership",
+    "Create a referral program — 10-15% commission or service credit for client referrals"
+  ],
+  "strategic": [
+    "Formalize the Mexico/LatAm market entry with localized case studies and Spanish-language content",
+    "Develop a productized AI Audit offering that scales beyond 1:1 consulting",
+    "Pursue third-party review profiles on Clutch, Google Business, and G2",
+    "Build an automated onboarding-to-retainer pipeline to convert project clients into recurring revenue"
+  ],
+  "competitors": [
+    {
+      "name": "Botpress / Voiceflow",
+      "positioning": "DIY chatbot platforms, self-service",
+      "pricing": "$0-$500/month subscription",
+      "social_proof": "Platform reviews, large user bases",
+      "content": "Extensive docs, tutorials, templates"
+    },
+    {
+      "name": "Upwork Freelancers",
+      "positioning": "Marketplace, commodity pricing",
+      "pricing": "$500-$5,000/project",
+      "social_proof": "Star ratings, job history",
+      "content": "Individual profiles, no thought leadership"
+    },
+    {
+      "name": "Small AI Agencies",
+      "positioning": "Team-based, broader capabilities",
+      "pricing": "$10K-$50K/project",
+      "social_proof": "Clutch/G2 reviews, case studies",
+      "content": "Blog, whitepapers, webinars"
+    }
+  ]
+}
