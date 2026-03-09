@@ -25,7 +25,7 @@ tags:
   - "pdf-reports"
   - "parallel-agents"
 
-thumbnail: ""
+thumbnail: "public/images/CUSHLABS-AI-MARKETING-THUMB.webp"
 hero_images: []
 demo_video_url: ""
 
