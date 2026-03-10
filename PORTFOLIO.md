@@ -37,7 +37,6 @@ hero_images:
   - "/images/portfolio/cushlabs-ai-marketing-08.webp"
   - "/images/portfolio/cushlabs-ai-marketing-09.webp"
   - "/images/portfolio/cushlabs-ai-marketing-10.webp"
-  - "/images/portfolio/cushlabs-ai-marketing-11.webp"
 demo_video_url: "/video/cushlabs-ai-marketing-brief.mp4"
 demo_video_poster: "/video/cushlabs-ai-marketing-brief-poster.webp"
 
