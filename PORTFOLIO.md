@@ -5,7 +5,7 @@
 portfolio_enabled: true
 portfolio_priority: 3
 portfolio_featured: true
-portfolio_last_reviewed: "2026-03-08"
+portfolio_last_reviewed: "2026-03-09"
 
 title: "AI Marketing Suite for Claude Code"
 tagline: "15 slash commands that turn Claude Code into a full-service marketing analysis platform"
@@ -25,9 +25,21 @@ tags:
   - "pdf-reports"
   - "parallel-agents"
 
-thumbnail: "public/images/CUSHLABS-AI-MARKETING-THUMB.webp"
-hero_images: []
-demo_video_url: ""
+thumbnail: "/images/portfolio/cushlabs-ai-marketing-thumb.webp"
+hero_images:
+  - "/images/portfolio/cushlabs-ai-marketing-01.webp"
+  - "/images/portfolio/cushlabs-ai-marketing-02.webp"
+  - "/images/portfolio/cushlabs-ai-marketing-03.webp"
+  - "/images/portfolio/cushlabs-ai-marketing-04.webp"
+  - "/images/portfolio/cushlabs-ai-marketing-05.webp"
+  - "/images/portfolio/cushlabs-ai-marketing-06.webp"
+  - "/images/portfolio/cushlabs-ai-marketing-07.webp"
+  - "/images/portfolio/cushlabs-ai-marketing-08.webp"
+  - "/images/portfolio/cushlabs-ai-marketing-09.webp"
+  - "/images/portfolio/cushlabs-ai-marketing-10.webp"
+  - "/images/portfolio/cushlabs-ai-marketing-11.webp"
+demo_video_url: "/video/cushlabs-ai-marketing-brief.mp4"
+demo_video_poster: "/video/cushlabs-ai-marketing-brief-poster.webp"
 
 live_url: ""
 demo_url: ""
